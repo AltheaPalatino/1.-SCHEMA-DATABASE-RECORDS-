@@ -11,7 +11,7 @@ CREATE TABLE Appointments (
 appointment_id INTEGER PRIMARY KEY, 
 client_id INTEGER, 
 appointment_date DATE, 
-status VARCHAR(20), FOREIGN KEY (client_id) REFERENCES Clients(client_id)
+status VARCHAR(20)
 );
 
 -- Services Table
@@ -26,5 +26,5 @@ CREATE TABLE AppointmentServices (
 appointmentservices_id INTEGER PRIMARY KEY, 
 appointment_id INTEGER, 
 service_id INTEGER, 
-quantity INTEGER
+quantity INTEGER;
 );
